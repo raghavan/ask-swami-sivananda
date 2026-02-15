@@ -2,6 +2,20 @@
 
 One-time script to process Swami Sivananda's books and upload to Pinecone.
 
+## 🔧 One-Time Pinecone Setup
+
+Before running this script, create a free Pinecone index:
+
+1. **Sign up for Pinecone** (Free tier available): https://www.pinecone.io/
+2. **Create a new index** with these settings:
+   - **Index Name**: `swami-sivananda-new` (or your preferred name)
+   - **Dimensions**: `1024`
+   - **Metric**: `cosine`
+   - **Cloud Provider**: AWS (recommended)
+   - **Region**: us-east-1 (recommended)
+3. **Get your API key** from the Pinecone dashboard
+4. Note your index name for the `.env` configuration below
+
 ## Setup
 
 1. **Install dependencies**:
@@ -42,4 +56,4 @@ python upload_to_pinecone.py
 
 ## After Upload
 
-Once complete, you can deploy the chat app (in `../2-chat-app/`) to Vercel!
+Once complete, you can deploy the chat app (in `../chat-app/`) to Vercel!
