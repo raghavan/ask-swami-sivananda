@@ -1,0 +1,7 @@
+langchain>=0.3.14
+langchain-community>=0.3.14
+langchain-pinecone==0.2.13
+python-dotenv==1.0.1
+pypdf>=5.1.0
+tiktoken>=0.8.0
+langchain-text-splitters>=1.0.0
