@@ -4,26 +4,26 @@ Chat with the wisdom of Swami Sivananda's 300+ books using AI.
 
 ## 📦 Projects
 
-### 1️⃣ Vectorize & Upload (`1-vectorize-upload/`)
+### 1️⃣ Vectorize & Upload (`vectorize-upload/`)
 
 One-time script to process PDFs and upload to Pinecone.
 
 **Run locally once:**
 ```bash
-cd 1-vectorize-upload
+cd vectorize-upload
 pip install -r requirements.txt
 cp .env.example .env
 # Edit .env with your API keys
 python upload_to_pinecone.py
 ```
 
-### 2️⃣ Chat App (`2-chat-app/`)
+### 2️⃣ Chat App (`chat-app/`)
 
 Production chat interface deployed on Vercel.
 
 **Deploy to Vercel:**
 ```bash
-cd 2-chat-app
+cd chat-app
 vercel
 ```
 
@@ -37,7 +37,7 @@ vercel
 ### Step 1: Upload Books to Pinecone (One Time)
 
 ```bash
-cd 1-vectorize-upload
+cd vectorize-upload
 pip install -r requirements.txt
 cp .env.example .env
 # Add your API keys to .env
@@ -50,7 +50,7 @@ Cost: ~$0.50-$2.00 (one-time)
 ### Step 2: Deploy Chat App to Vercel
 
 ```bash
-cd ../2-chat-app
+cd ../chat-app
 npm install -g vercel
 vercel login
 vercel
