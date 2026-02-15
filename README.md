@@ -27,6 +27,10 @@ cd chat-app
 vercel
 ```
 
+## 📚 Books Source
+
+Download Swami Sivananda's books from: https://github.com/raghavan/SwamiSivanandaBooks
+
 ## 🔑 Required API Keys
 
 1. **Pinecone** (Free): https://www.pinecone.io/
@@ -34,20 +38,25 @@ vercel
 
 ## 🎯 Quick Start
 
-### Step 1: Upload Books to Pinecone (One Time)
+### Step 1: Get the Books
+
+Download Swami Sivananda's books from https://github.com/raghavan/SwamiSivanandaBooks
+
+### Step 2: Upload Books to Pinecone (One Time)
 
 ```bash
 cd vectorize-upload
 pip install -r requirements.txt
 cp .env.example .env
 # Add your API keys to .env
+# Update BOOKS_DIR in .env to point to your downloaded books
 python upload_to_pinecone.py
 ```
 
 Time: ~5-10 minutes
 Cost: ~$0.50-$2.00 (one-time)
 
-### Step 2: Deploy Chat App to Vercel
+### Step 3: Deploy Chat App to Vercel
 
 ```bash
 cd ../chat-app
@@ -64,7 +73,7 @@ Add environment variables in Vercel:
 Time: ~2 minutes
 Cost: FREE (Vercel Hobby plan)
 
-### Step 3: Share! 🎉
+### Step 4: Share! 🎉
 
 Your app is live at: `https://your-app.vercel.app`
 
